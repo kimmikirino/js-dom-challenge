@@ -32,3 +32,10 @@ const data = [
         description: 'Desenho'
     }
 ]
+
+// byId ou byClassName?
+let genero = document.getElementById('genre')
+//let genero = document.getElementsByClassName('genre-container')
+
+genero.innerHTML = data.map(genero => genero.description);
+
