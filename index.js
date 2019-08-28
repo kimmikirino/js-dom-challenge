@@ -33,9 +33,7 @@ const data = [
     }
 ]
 
-// byId ou byClassName?
-let genero = document.getElementById('genre')
-//let genero = document.getElementsByClassName('genre-container')
+let genero = document.getElementById('genre-details')
 
-genero.innerHTML = data.map(genero => genero.description);
+genero.innerHTML = data.map(genero => `${genero.id} - ${genero.description}`);
 
