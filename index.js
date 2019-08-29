@@ -1,39 +1,8 @@
-const data = [
-    {
-        id: 1,
-        description: 'Drama'
-    },
-    {
-        id: 2,
-        description: 'Comédia',
-    },
-    {
-        id: 3,
-        description: 'Suspense'
-    },
-    {
-        id: 4,
-        description: 'Ficção'
-    },
-    {
-        id: 5,
-        description: 'Terror'
-    },
-    {
-        id: 6,
-        description: 'Comédia romântica'
-    },
-    {
-        id: 7,
-        description: 'Ficção científica'
-    },
-    {
-        id: 8,
-        description: 'Desenho'
-    }
-]
+// document.getElementById("id-menu-bar").onclick = function() {
+//   window.location.href = "C:/Users/karii/trainee_sciensa/js-dom-challenge/genero/index.html"
+// }
 
-let genero = document.getElementById('genre-details')
-
-genero.innerHTML = data.map(genero => `${genero.id} - ${genero.description}`);
+document.getElementById("id-menu-bar").onclick = function() {
+    window.location.href = "C:/Users/karii/trainee_sciensa/js-dom-challenge/genero/index.html"
+}
 
