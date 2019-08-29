@@ -33,11 +33,20 @@ const data = [
     }
 ]
 
-let generosCine = data.map((gen) => `<div class="itens"><p>ID: ${gen.id}</p><p>Descricao: ${gen.description}</p></div>`)
+ let generosCine = data.map((gen) => 
+    `<div class="itens">
+        <p>ID: ${gen.id}</p>
+        <p>Descricao: ${gen.description}</p>
+    </div>`
+    )
 
-let container = document.getElementById('idData')
+ let container = document.getElementById('idData')
 
-generosCine.forEach((genero) => container.innerHTML = container.innerHTML + genero)
+ // container.innerHTML = data.map((gen) => `<div class="itens"><p>ID: ${gen.id}</p><p>Descricao: ${gen.description}</p></div>`).join('')
+
+ generosCine.forEach((genero) => container.innerHTML = container.innerHTML + genero)
+
+
 
 console.log(generosCine)
 
