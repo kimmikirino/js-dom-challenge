@@ -104,6 +104,13 @@ button:focus {
     position: relative;
 }
 
+.teste {
+    justify-content: center;
+}
+
+div {
+    display: block;
+}
 
 @media only screen and (max-width: 1360) {
     .gallery-container {

@@ -35,7 +35,7 @@ const data = [
 
  let generosCine = data.map((gen) => 
     `<div class="itens">
-        <p>ID: ${gen.id}</p>
+        <p>ID: ${gen.id}</p>&nbsp
         <p>Descricao: ${gen.description}</p>
     </div>`
     )
