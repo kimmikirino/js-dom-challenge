@@ -27,6 +27,10 @@ button:focus {
   padding: 0px 30px;
 }
 
+/* .btnAdicionar {
+  border-radius: 25px;
+} */
+
 .menu-content {
   padding-right: 30px;
 }
@@ -35,14 +39,20 @@ button:focus {
   background-color: transparent;
   color: white;  
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 150;
   padding: 0px 10px;  
   border: 0px;
+  border-radius: 20px;
   cursor: pointer;
   width: auto; /* obrigando a respeitar o conteúdo dentro do botão */
   height: 37px;
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
+}
+
+.menu-content button:hover {
+  background-color: #e72f85;
 }
 
 .menu-bar {
@@ -169,10 +179,9 @@ button:focus {
   font-weight: 600;
 }
 
-.genre-container {
-  display: flex;
-  position: relative;
-  flex-direction: column;
+.genre-details {
+  background-color: transparent;
+  padding: 10px;
 }
 
 /* detecta o tamanho da tela e seta de acordo com o max-width*/

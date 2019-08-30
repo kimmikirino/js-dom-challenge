@@ -36,8 +36,15 @@ const data = [
 //let genero = document.getElementsByClassName('genre-details')
 let genero = document.getElementsByClassName('genre-details');
 
-//genero[0].innerHTML = data.map(genero => `${genero.id} - ${genero.description}`);
-
 genero[0].innerHTML = data.map(
     genero => `<p> ${genero.id} - ${genero.description} </p>`
 ).join('');
+
+let addgenero = document.getElementById("add-genero");
+addgenero.addEventListener("click", redirecionar, false);
+
+// document.getElementById("id-menu-bar").addEventListener("click", redirecionar);
+
+function redirecionar() {
+    addgenero.innerHTML = "<div>testandooooo</div>"
+}
