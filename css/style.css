@@ -76,10 +76,10 @@ button:focus {
 
 .gallery-container {
   margin: 10px auto; /* auto: centraliza */
-  width: 1360px;
+  width: 100%; 
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   /* O flex-wrap foi usado pq se o container passar do
    * tamanho fixo dele, quebra linha 
    */
@@ -98,7 +98,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* O position: relative foi incluído p/ position absolute 
+  /* O position: relative foi incluído pro position absolute 
    * do img-legend obedecer esse cara aqui e não o body
    */
   position: relative; 
@@ -188,6 +188,18 @@ button:focus {
   margin: 6px 0;
 } */
 
+.description-page h4 {
+  background-color: rgba(255, 213, 246, 0.918);
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0px;
+  
+}
+
 .genre-container {
   display: flex;
   justify-content: center; 
@@ -195,17 +207,19 @@ button:focus {
 }
 
 .genre-container > div {
-  background-color: rgba(255, 213, 246, 0.877);
+  background-color: rgba(250, 226, 245, 0.973);
   width: 90%;
   height: 230px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 10px auto; 
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-radius: 10px;
-  font-weight: 600;
   justify-content: center;  
   align-items: center;
-  margin: 10px auto; 
+
   position: absolute;
   overflow: hidden;
   border: 1px solid gray;

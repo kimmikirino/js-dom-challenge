@@ -33,26 +33,27 @@ const data = [
     }
 ]
 
+/******************************************************
+ *             Iteração utilizando map                *
+ * ****************************************************/
 let genre = document.getElementById('genre-details');
 
-/**
- * Utilizando join:
- */
+//// Utilizando join
 genre.innerHTML = data.map(
     genreItem => `<p class="genre-items"> ${genreItem.id}. ${genreItem.description} </p>`
 ).join('');
 
-/**
- * Utilizando foreach:
- */
+//// Utilizando foreach
 // let dataGenre = data.map(
 //     genreItem => `<p> ${genreItem.id}. ${genreItem.description} </p>`
 // )
-
 // dataGenre.forEach(element => {
-//     genre.innerHTML = genre.innerHTML + element
+//     genre.innerHTML = genre.innerHTML + element;
 // });
 
+/******************************************************
+ *      Redirecionar para home ao clicar no logo      *
+ * ****************************************************/
 let home = document.getElementById("id-logo");
 
 home.addEventListener('click', (evento) => {
