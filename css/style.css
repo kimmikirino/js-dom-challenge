@@ -12,7 +12,7 @@ button:focus {
   width: 100%;
   height: 70px;
   background-color: rgba(97, 61, 155, 0.7);
-  z-index: 1; /*quero que fique acima de todo mundo*/
+  z-index: 1; /* para ficar acima de todo mundo */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,11 +25,8 @@ button:focus {
 .logo-content {
   border-right: 1px solid white;
   padding: 0px 30px;
+  cursor: pointer;
 }
-
-/* .btnAdicionar {
-  border-radius: 25px;
-} */
 
 .menu-content {
   padding-right: 30px;
@@ -48,22 +45,10 @@ button:focus {
   height: 37px;
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
 }
 
 .menu-content button:hover {
   background-color: #e72f85;
-}
-
-.menu-bar {
-  cursor: pointer;
-}
-
-.menu-bar-style {
-  background-color: white;
-  width: 30px;
-  height: 3px;  
-  margin: 6px 0;
 }
 
 .header {
@@ -75,7 +60,6 @@ button:focus {
   align-items: center;
   padding-top: 70px;
   color: white;
-  /* background-color: rgba(97, 61, 155, 0.7); */
   background-image: url("../imgs/fundo_header.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -83,24 +67,26 @@ button:focus {
 
 .header h1 {
   margin: 5px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .title-trainee {
   font-weight: 300;
 }
 
-/* nunca usar galleryContainer */
 .gallery-container {
   margin: 10px auto; /* auto: centraliza */
   width: 1360px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: wrap; /*se notar que o container passou do tamanho fixo dele, quebra linha */
+  /* O flex-wrap foi usado pq se o container passar do
+   * tamanho fixo dele, quebra linha 
+   */
+  flex-wrap: wrap; 
 }
 
-/* lembrar que o > significa filhos diretos */
+/* Lembrar que o > (dória rs) significa filhos diretos */
 .gallery-container > div {
   width: 250px;
   height: 380px;
@@ -108,36 +94,37 @@ button:focus {
   background-color: #363636;
   border: 1px solid gray;
   border-radius: 5px;
-
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /*incluído pro position absolute do img-legend obedecer esse cara aqui e não o body*/
+  /* O position: relative foi incluído p/ position absolute 
+   * do img-legend obedecer esse cara aqui e não o body
+   */
+  position: relative; 
 }
 
 .img-legend {
   width: 100%;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.7); /*rgb e alfa.. alfa: transparencia*/
+  background-color: rgba(0, 0, 0, 0.7); /* rgb e alfa... alfa: transparencia */
   position: absolute;
   bottom: 0;
   color: white;
   border-radius: 5px;
-  display: flex; /*se colocar o flex-grow no filho, precisa colocar o flex no pai*/
+  display: flex; /* se colocar o flex-grow no filho, precisa colocar o flex no pai */
 }
 
-/*a div que tiver essa classe dentro dessa classe*/
+/* Significa que div que tiver essa classe (text-legend) 
+ * dentro dessa classe (img-legend), terá ess estilo */
 .img-legend div.text-legend {
-  white-space: nowrap; /*não quebrar a linha*/
-  overflow: hidden; /*esconder*/
+  white-space: nowrap; /* não quebrar a linha */
+  overflow: hidden; /* esconder */
 }
 
 .text-legend {
-  /*flex-grow: 4;*/
   flex: 4;
   padding: 5px 0px;
-  /*background-color: red;*/
 }
 
 .img-legend div h4, h6 {
@@ -153,7 +140,9 @@ button:focus {
   align-items: center;
 }
 
-/*o botão que está dentro dessa classe*/
+/* O botão que está dentro dessa classe 
+ * terá esse estilo 
+ */
 .more-details button {
   background-color: #e72f85;
   border: 0px;
@@ -168,7 +157,9 @@ button:focus {
   cursor: pointer;
 }
 
-/*toda vez que tiver os dois pontos, estamos falando de comportamento (pseudo classes)*/
+/* Toda vez que tiver os dois pontos, estamos falando 
+ * de comportamento (pseudoclasses)
+ */
 .more-details button:hover {
   background-color: #e5bace;
   color: #e72f85;
@@ -179,14 +170,55 @@ button:focus {
   font-weight: 600;
 }
 
-.genre-details {
-  background-color: transparent;
-  padding: 10px;
+.menu-bar {
+  cursor: pointer;
 }
 
-/* detecta o tamanho da tela e seta de acordo com o max-width*/
+/* .menu-bar-style {
+  background-color: white;
+  width: 30px;
+  height: 3px;  
+  margin: 6px 0;
+} */
+
+/* .span-genre {
+  color: white;
+  width: 30px;
+  height: 3px;  
+  margin: 6px 0;
+} */
+
+.genre-container {
+  display: flex;
+  justify-content: center; 
+  margin: 10px auto;
+}
+
+.genre-container > div {
+  background-color: rgba(255, 213, 246, 0.877);
+  width: 90%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  font-weight: 600;
+  justify-content: center;  
+  align-items: center;
+  margin: 10px auto; 
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+/* Usado no genero.js */
+.genre-items {
+  font-size: 15px;
+}
+
+/* Detecta o tamanho da tela e altera de acordo com o max-width */
 @media only screen and (max-width: 1359px) {
-  .gallery-container {
+  .gallery-container, .genre-container {
       width: 816px;
   }
   .header {
@@ -201,7 +233,7 @@ button:focus {
 }
 
 @media only screen and (max-width: 815px) {
-  .gallery-container {
+  .gallery-container, .genre-container {
       width: 544px;
   }
 
@@ -212,7 +244,7 @@ button:focus {
 }
 
 @media only screen and (max-width: 543px) {
-  .gallery-container {
+  .gallery-container, .genre-container {
       width: 272px;
   }
   
@@ -221,7 +253,4 @@ button:focus {
       margin: 5px;
   }
 
-  .menu-content button {
-      font-size: 12px;
-  }
 }
