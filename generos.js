@@ -42,11 +42,16 @@ const data = [
 
  let container = document.getElementById('idData')
 
- // container.innerHTML = data.map((gen) => `<div class="itens"><p>ID: ${gen.id}</p><p>Descricao: ${gen.description}</p></div>`).join('')
-
  generosCine.forEach((genero) => container.innerHTML = container.innerHTML + genero)
 
+// Outro modo de listar os dados (sem aparecer ,)
 
+ // container.innerHTML = data.map((gen) => 
+ //       `<div class="itens">
+//          <p>ID: ${gen.id}</p>
+  //        <p>Descricao: ${gen.description}</p>
+ //        </div>`).join('')
 
-console.log(generosCine)
+ 
+
 
