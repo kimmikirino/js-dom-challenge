@@ -32,3 +32,12 @@ const data = [
         description: 'Desenho'
     }
 ]
+
+const iteracao = data.map(element =>{
+    return `<p>${element.id}  ${element.description}</p>` 
+}).join("")
+
+const  myContainer = document.getElementsByClassName('container');
+myContainer[0].innerHTML = myContainer[0].innerHTML + '<h3>'+iteracao+'</h3>';
+
+    //for()
