@@ -1,6 +1,6 @@
 
 let listGenre = document.getElementById("id-menu-bar");
 
-listGenre.addEventListener('click', (evento) => {
+listGenre.addEventListener('click', () => {
     window.location.href = './genero/genero.html';
 })

@@ -56,6 +56,6 @@ genre.innerHTML = data.map(
  * ****************************************************/
 let home = document.getElementById("id-logo");
 
-home.addEventListener('click', (evento) => {
+home.addEventListener('click', () => {
     window.location.href = "../index.html";
 })
