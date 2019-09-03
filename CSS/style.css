@@ -1,0 +1,243 @@
+body {
+    margin: 0px;
+    font-family: "Noto Sans"
+}
+
+button:focus {
+    outline: none;
+}
+
+.fixed-menu {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(97, 61, 155, 0.7);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fixed-menu div {
+    margin: 10px;
+}
+
+.logo-content {
+    border-right: 1px solid white;
+    padding: 0px 30px;
+}
+
+.menu-options{
+    display: flex;
+    flex: 1;
+}
+
+.menu-content{
+    padding-right: 30px;
+}
+
+.menu-content button {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 20px;
+    width: auto;
+    height: 37px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-content button:hover {
+    background-color: #e72f85
+}
+
+.menu-content a {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 20px;
+    width: auto;
+    height: 37px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-options a:visited, a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-content a:hover {
+    background-color: #e72f85;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/fundo_header.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.header h1 {
+    margin: 5px;
+    font-size: 65px;
+}
+
+.title-trainee{
+    font-weight: 300;
+}
+
+.itens {
+    width: 80%;
+    height: 20%;
+    margin: 10px;
+    background-color: #7a7a7a;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container {
+    margin: 10px auto;
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.gallery-container > div {
+    width: 250px;
+    height: 380px;
+    margin: 10px;
+    background-color: #363636;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-legend {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.img-legend div.text-legend {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-legend {
+    flex: 4;
+    padding: 5px 0px;    
+}
+
+.img-legend div h4, 
+h6{
+    margin: 4px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.more-details {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-details button {
+    background-color: #e72f85;
+    border: 0px;
+    border-radius: 20px;
+    width: 37px;
+    height: 37px;
+    color: white;
+    font-size: 35px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.more-details button:hover {
+    background-color: #e5bace;
+    color: #e72f85;
+}
+
+.more-details button span {
+    margin-top: -1px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1360) {
+    .gallery-container {
+        width: 1360;
+    }
+}
+
+@media only screen and (max-width: 1359px) {
+    .gallery-container {
+        width: 816px;
+    }
+    .header {
+        height: 225px;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 50px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .gallery-container {
+        width: 544px;
+    }
+    .header h1 {
+        font-size: 40px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 543px) {
+    .gallery-container {
+        width: 272px;
+    }
+    .header h1 {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .menu-content button {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,71 @@
+@import url("style.css");
+
+.genre-container {
+    margin: 10px auto;
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itens {
+    width: 80%;
+    height: 20%;
+    margin: 10px;
+    background-color: #7a7a7a;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 1360) {
+    .gallery-container {
+        width: 1360;
+    }
+}
+
+@media only screen and (max-width: 1359px) {
+    .gallery-container {
+        width: 816px;
+    }
+    .header {
+        height: 225px;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 50px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .gallery-container {
+        width: 544px;
+    }
+    .header h1 {
+        font-size: 40px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 543px) {
+    .gallery-container {
+        width: 272px;
+    }
+    .header h1 {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .menu-content button {
+        font-size: 12px;
+    }
+}
